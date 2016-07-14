@@ -1,0 +1,562 @@
+npm/*
+_____________
+|           |
+|  HEADER   |
+|___________|
+*/
+
+* {
+
+}
+
+.logo {
+  position: absolute;
+  top: -1.5vw;
+  height: 18.33vw;
+  width: 23.33vw;
+  left: 3vw;
+  z-index: 10;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 8.33vw;
+  background: repeating-linear-gradient(
+  90deg,
+  #423162,
+  #316231 .83vw,
+  yellow .83vw,
+  #465298 .83vw
+);
+}
+
+.links {
+  text-decoration: none;
+  text-shadow: .25vw 0 black;
+  color: white;
+  display: inline-block;
+  padding: 1.67vw;
+  font-size: 2.5vw;
+  font-family: cursive;
+}
+
+.headerText {
+  position: absolute;
+  right: 8.33vw;
+  top: 2.5vw;
+}
+
+
+
+/*___________
+|           |
+|  FOOTER   |
+|___________|
+*/
+.footer {
+  position: relative;
+  width: 100%;
+  height: 4.167vw;
+  background: repeating-linear-gradient(
+  90deg,
+  #423162,
+  #316231 .83vw,
+  yellow .83vw,
+  #465298 .83vw
+  );
+ }
+
+.footerText {
+    position: absolute;
+    bottom: -1vw;
+    left: 5vw;
+}
+
+.linksF {
+  text-decoration: none;
+  text-shadow: .25vw 0 black;
+  color: white;
+  display: inline-block;
+  padding: 1.67vw;
+  font-size: 2.08vw;
+  font-family: cursive;
+}
+
+.linksA{
+  text-decoration: none;
+  text-shadow: .25vw 0 black;
+  color: white;
+  display: inline-block;
+  padding: 1.67vw;
+  font-size: 1.5vw;
+  font-family: cursive;
+}
+
+
+/*
+_____________
+|           |
+| HomePage  |
+|___________|
+*/
+
+.containerHP {
+  height: 116vw;
+}
+
+.bakeryphoto {
+    height: 50vw;
+    width: 100%;
+}
+
+.cf1, .cf2, .cf3 {
+  box-sizing: border-box;
+  height: 50vw;
+  width: 98.75vw;
+  position: absolute;
+  top: 9vw;
+}
+//
+.hpDescription {
+    height: 33.33vw;
+    width: 83.33vw;
+    left: 8.5vw;
+    position: absolute;
+    top: 57vw;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.bake1 {
+  height: 29.17vw;
+  width: 33.33vw;
+  position: absolute;
+  top: 95vw;
+  left: 2vw;
+}
+
+.bake2 {
+  height: 29.17vw;
+  width: 33.33vw;
+  float: right;
+  position: absolute;
+  top: 95vw;
+  right: 2vw;
+}
+
+.crossfade > img {
+    position: absolute;
+    color: transparent;
+    opacity: 0;
+    z-index: 1;
+    animation: imageAnimation 24s linear infinite 0s;
+}
+.crossfade > img:nth-child(1) {
+    animation-delay: 18s;
+}
+
+.crossfade > img:nth-child(2) {
+    animation-delay: 6s;
+}
+
+.crossfade > img:nth-child(3) {
+    animation-delay: 12s;
+}
+
+@keyframes imageAnimation {
+    0% { opacity: 0;
+         animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1; }
+    25% { opacity: 0; animation-timing-function: ease-in;}
+    100% { opacity: 0; }
+}
+
+/*
+_____________
+|           |
+|  Contact  |
+|___________|
+*/
+
+.contactContainer {
+  height: 72vw;
+}
+
+.message {
+  position: absolute;
+  top: 12vw;
+  right: 6.25vw;
+  padding-bottom: 2.5vw;
+  font-family: fantasy;
+  font-weight: bolder;
+  font-size: 1.7vw;
+  text-align: center;
+}
+
+.contImg {
+  position: absolute;
+  top: 15vw;
+  height: 33.33vw;
+  width: 58.33vw;
+  padding-right: 1.67vw;
+}
+
+.form {
+  position: absolute;
+  right: 3vw;
+  top: 13vw;
+  height: 64vw;
+  width: 33.33vw;
+  border: .25vw solid #6f5f5e;
+  padding: .83vw;
+}
+
+.logoC {
+  position: absolute;
+  top: -2vw;
+  height: 18.33vw;
+  width: 23.33vw;
+  right: 5.5vw;
+  z-index: 10;
+}
+
+
+.name {
+  position: absolute;
+  top: 22vw;
+  right: 8.1vw;
+}
+
+.email {
+  position: absolute;
+  right: 8.1vw;
+  top: 25vw;
+}
+
+.textarea {
+  position: absolute;
+  top: 29vw;
+  right: 3.25vw;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.sbmCon   {
+position: absolute;
+top: 72vw;
+right: 17.4vw;
+background: #ecc8c4;
+border:none;
+font-size: 1.25vw;
+font-family: fantasy;
+border-radius: 30%;
+}
+
+input {
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+
+
+/*-----MANAGE-------*/
+
+.sbmDel {
+  position: absolute;
+  right: 22.5vw;
+  top: 45vw;
+}
+
+.sbmUpd {
+  position: absolute;
+  right: 22.5vw;
+  top: 56.67vw;
+}
+
+
+
+/*
+_____________
+|           |
+|   Menu    |
+|___________|
+*/
+
+.menuContainer {
+  height: 350vw;
+}
+
+.crossfadeA > img:nth-child(1) {
+    background-image: src("http://d2gk7xgygi98cy.cloudfront.net/14-3-large.jpg");
+    animation-delay: 6s;
+    height: 50vw;
+    width: 60vw;
+    position: absolute;
+    top: 25vw;
+    animation: imageAnimation 18s linear infinite 3s;
+}
+.crossfadeB > img:nth-child(1) {
+    background-image: src("http://danielchocolates.com/wp-content/uploads/2015/11/shop-pastries-banner.jpg");
+    animation-delay: 16s;
+    height: 50vw;
+    width: 60vw;
+    position: absolute;
+    top: 80vw;
+    animation: imageAnimation 8s linear infinite 4s;
+}
+
+.crossfadeC > img:nth-child(1) {
+    background-image: src('https://afrostore.files.wordpress.com/2011/01/bread.jpg');
+    animation-delay: 20s;
+    height: 50vw;
+    width: 60vw;
+    animation: imageAnimation 24s linear infinite 5s;
+    position: absolute;
+    top: 135vw;
+}
+@keyframes imageAnimation {
+    0% { opacity: 0;
+    animation-timing-function: ease-in; }
+    8% { opacity: 1;
+         animation-timing-function: ease-out; }
+    17% { opacity: 1; }
+    25% { opacity: 0;
+      animation-timing-function: ease-in;}
+    100% { opacity: 0; }
+}
+
+.menuItem1 {
+  position: absolute;
+  top: 26vw;
+  right: 4vw;
+}
+
+.menuLinks {
+  position: absolute;
+  right: 6vw;
+  top: 12vw;
+}
+
+.linksM {
+  text-decoration: none;
+  text-shadow: .25vw 0 black;
+  color: #ecc8c4;
+  display: inline-block;
+  padding: 1.67vw;
+  font-size: 2.083vw;
+  font-family: cursive;
+  text-align: right;
+}
+
+.pastries {
+  font-family: cursive;
+  padding: .83vw;
+  text-align: right;
+  font-size: 1.67vw;
+  font-weight: bolder;
+}
+
+/*-------CAKES--------- */
+.linksC {
+  position: absolute;
+  top: 12vw;
+  right: 6vw;
+}
+.cakesContainer {
+  height: 325vw;
+}
+
+
+
+/*-------Drinks--------- */
+.linksD {
+  position: absolute;
+  top: 12vw;
+  right: 6vw;
+}
+
+.drinksContainer {
+  height: 325vw;
+}
+
+
+/*
+_____________
+|           |
+|   Story   |
+|___________|
+*/
+
+.storyContainer {
+    height: 55vw;
+}
+
+
+.coupleImage {
+    width: 25vw;
+    height: 30vw;
+    position: absolute;
+    top: 16vw;
+    left: 2vw;
+}
+
+.innerPhoto {
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+    top: 16vw;
+    right: 2vw;
+}
+
+.storyDescrip {
+    width: 36vw;
+    height: 20.83vw;
+    padding: 1.67vw;
+    text-align: center;
+    position: absolute;
+    left: 27.75vw;
+    top: 10vw;
+    font-size: 2vw;
+}
+
+
+
+
+
+/*
+__________________
+|               |
+|SpecialtyCakes |
+|_______________|
+*/
+
+.scContainer {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+
+// .sc1 {
+//     width: 60vw;
+//     height: 4.167vw;
+//     flex-grow: 0;
+//     flex-shrink: 0;
+//     flex-basis: 0;
+// }
+
+.sc2 {
+    width: 60vw;
+    height: 50vw;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
+.sc3 {
+    width: 60vw;
+    height: 50vw;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
+.sc4 {
+    width: 60vw;
+    height: 50vw;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0;
+}
+
+/*
+__________________
+|               |
+|     Manage    |
+|_______________|
+*/
+
+.manage {
+  display: inline;
+  }
+
+  .manageLinks {
+    display: inline;
+  }
+
+  .sbmDel {
+    position: absolute;
+    top: 16vw;
+    left: 7vw;
+  }
+
+  .sbmUpd {
+    position: absolute;
+    left: 7vw;
+    top: 33.75vw;
+  }
+
+  .form2 {
+    position: absolute;
+    top: 12vw;
+
+  }
+  .form3 {
+    position: absolute;
+    top: 25vw;
+
+  }
+
+
+  /*
+  __________________
+  |               |
+  |   Join Team   |
+  |_______________|
+  */
+
+  .joinContainer {
+    height: 65vw;
+  }
+
+  .joinText {
+    text-align: center;
+    position: absolute;
+    top: 14vw;
+    font-size: 2vw;
+    font-family: fantasy;
+    right: 4vw;
+    left: 4vw;
+  }
+
+  .joinTextInput {
+    position: absolute;
+    top: 28vw;
+    right: 11vw;
+    font-size: 1.5vw;
+    text-align: center;
+  }
+
+  .nameJoin {
+    position: absolute;
+    top: 22vw;
+    right: 42vw;
+  }
+
+  .emailJoin {
+    position: absolute;
+    right: 42vw;
+    top:25vw;
+  }
+
+  .sbmConJoin {
+    position: absolute;
+    top: 65vw;
+    font-size: 1.5vw;
+    right: 47vw;
+  }
